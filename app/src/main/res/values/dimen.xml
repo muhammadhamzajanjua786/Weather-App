@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="three_dp">3dp</dimen>
+    <dimen name="four_dp">4dp</dimen>
+    <dimen name="six_dp">6dp</dimen>
+    <dimen name="eight_dp">8dp</dimen>
+    <dimen name="ten_dp">10dp</dimen>
+    <dimen name="fifteen_dp">15dp</dimen>
+    <dimen name="twenty_dp">20dp</dimen>
+    <dimen name="button_large_icon_size">30dp</dimen>
+    <dimen name="button_medium_icon_size">22dp</dimen>
+
+    <!-- Weather Screen Sizes -->
+    <dimen name="text_size_weather_number">120sp</dimen>
+    <dimen name="text_size_weather_title">28sp</dimen>
+    <dimen name="text_size_weather_subtitle">24sp</dimen>
+    <dimen name="text_size_weather_body">20sp</dimen>
+    <dimen name="text_size_weather_caption">15sp</dimen>
+    <dimen name="text_size_weather_button_medium">18sp</dimen>
+    <dimen name="text_size_weather_button_small">15sp</dimen>
+    <dimen name="text_size_weather_search">15sp</dimen>
+    <!-- Weather Forecast Item Screen Sizes -->
+    <dimen name="text_size_weather_forecast_item_title">45sp</dimen>
+    <dimen name="text_size_weather_forecast_item_subtitle">25sp</dimen>
+    <dimen name="text_size_weather_forecast_item_body">15sp</dimen>
+    <dimen name="text_size_weather_forecast_item_button">15sp</dimen>
+    <dimen name="text_size_toolbar_title">22sp</dimen>
+</resources>

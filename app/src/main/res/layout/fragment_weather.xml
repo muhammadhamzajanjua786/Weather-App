@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    tools:context=".presentation.current_weather.WeatherFragment">
+
+    <include
+        android:id="@+id/include_search"
+        layout="@layout/search_bar"/>
+
+    <TextView
+        android:id="@+id/layout_search_a_city"
+        style="@style/WeatherTitleStyle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="@string/search_a_city_weather"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/include_search"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_weather"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="invisible"
+        app:layout_constraintTop_toBottomOf="@id/include_search"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/topSection"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/section_bottom"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tvCityName"
+                style="@style/WeatherTitleStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Pakistan" />
+
+            <TextView
+                android:id="@+id/tvTemperature"
+                style="@style/WeatherTitleLargeStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="26"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvCityName" />
+
+            <TextView
+                style="@style/WeatherBodyStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/c"
+                app:layout_constraintStart_toEndOf="@id/tvTemperature"
+                app:layout_constraintTop_toTopOf="@id/tvTemperature" />
+
+            <TextView
+                android:id="@+id/tvWeatherCondition"
+                style="@style/WeatherSubTitleStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvTemperature"
+                tools:text="Clear" />
+
+            <TextView
+                android:id="@+id/tvTempHighLow"
+                style="@style/WeatherBodyStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvWeatherCondition"
+                tools:text="High:27°  Low:31°" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="@color/divider"
+            android:layout_marginTop="@dimen/twenty_dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/topSection"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/section_bottom"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/divider">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/tv_wind"
+                style="@style/MaterialButtonWithIconStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="@string/_3_7km_h_nwind"
+                app:icon="@drawable/ic_location"
+                android:layout_marginEnd="@dimen/fifteen_dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/tv_visibility"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/tv_pressure"
+                style="@style/MaterialButtonWithIconStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/_1010_mbar_npressure"
+                app:icon="@drawable/ic_temprature"
+                android:layout_marginEnd="@dimen/fifteen_dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/tv_humidity"
+                app:layout_constraintTop_toBottomOf="@id/tv_wind" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/tv_visibility"
+                style="@style/MaterialButtonWithIconStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:icon="@drawable/ic_visibility"
+                android:layout_marginStart="@dimen/fifteen_dp"
+                app:layout_constraintStart_toEndOf="@id/tv_wind"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tv_wind"
+                android:text="@string/label_number_km_visibility"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/tv_humidity"
+                style="@style/MaterialButtonWithIconStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:icon="@drawable/ic_water_outline"
+                android:layout_marginStart="@dimen/fifteen_dp"
+                android:backgroundTint="@android:color/transparent"
+                app:layout_constraintStart_toEndOf="@id/tv_pressure"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tv_pressure"
+                tools:text="83%\nHumidity" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_next_forecast"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginBottom="30dp"
+            android:text="@string/_5_day_forecast"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

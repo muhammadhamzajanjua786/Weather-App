@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Weather App</string>
+    <string name="search_city_weather">Search City Weather</string>
+    <string name="temperature">%1$s</string>
+    <string name="temp_high_low">H:%1$s° L:%2$s°</string>
+    <string name="humidity">%1$s%%\nHumidity</string>
+    <string name="chance_of_rain">%1$s%%\nChance of rain</string>
+    <string name="visibility_text">%.1f km\nVisibility</string>
+    <string name="wind_speed">%1$s m/s\nWind</string>
+    <string name="_5_day_forecast">5-Day Forecast</string>
+    <string name="next_forecast">Next Forecast</string>
+    <string name="pressure">%1$s mbar\nPressure</string>
+    <string name="cancel">Cancel</string>
+    <string name="c">°C</string>
+    <string name="_3_7km_h_nwind">3.7km/h\nWind</string>
+    <string name="_1010_mbar_npressure">1010 mbar\nPressure</string>
+    <string name="_83_nhumidity">83%\nHumidity</string>
+    <string name="label_clear">Clear</string>
+    <string name="label_chance_of_rain">49%\nChance of rain</string>
+    <string name="label_wind">3.7km/h\nWind</string>
+    <string name="label_pressure">1010 mbar\nPressure</string>
+    <string name="label_number_km_visibility">5.4km\nVisibility</string>
+    <string name="search_a_city_weather">Search a city weather</string>
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="placeholder">#409E9E9E</color>
+    <color name="divider">#409E9E9E</color>
+    <color name="color_light_blue">#E8E9F1</color>
+    <color name="ash">#4DFFFFFF</color>
+    <color name="light_blue">#62B8F6</color>
+    <color name="dark_blue">#2C79C1</color>
+    <color name="search_bg">#FFFF</color>
+    <color name="card_color">#33FFFFFF</color>
+    <color name="deep_blue">#061E64</color>
+    <color name="blue_gray">#7D89A3</color>
+    <color name="light_sky_blue">#E8F4FA</color>
+    <color name="sky_mist">#E8F4FA</color>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="SearchViewStyle">
+        <item name="android:background">@drawable/white_square_rounded_shape_bg</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:inputType">text</item>
+        <item name="android:textSize">@dimen/text_size_weather_search</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textColorHint">@color/placeholder</item>
+        <item name="android:textColor">@color/deep_blue</item>
+    </style>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Toolbar Style -->
+    <style name="Widget.Custom.MaterialToolbar" parent="Widget.MaterialComponents.Toolbar">
+        <item name="titleTextAppearance">@style/TextAppearance.ToolbarTitle</item>
+        <item name="android:elevation">4dp</item>
+        <item name="android:background">@color/white</item>
+    </style>
+</resources>

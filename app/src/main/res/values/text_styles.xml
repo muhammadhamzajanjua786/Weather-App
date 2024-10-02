@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base Text Appearance -->
+    <style name="BaseBoldTextStyle">
+        <item name="android:textColor">@color/deep_blue</item>
+        <item name="android:fontFamily">@font/cabin_bold</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="BaseSemiBoldTextStyle">
+        <item name="android:textColor">@color/deep_blue</item>
+        <item name="android:fontFamily">@font/cabin_semibold</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="BaseMediumTextStyle">
+        <item name="android:textColor">@color/deep_blue</item>
+        <item name="android:fontFamily">@font/cabin_medium</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <!-- Weather Screen Styles -->
+    <style name="WeatherTitleLargeStyle" parent="BaseBoldTextStyle">
+        <item name="android:textSize">@dimen/text_size_weather_number</item>
+    </style>
+    <style name="WeatherTitleStyle" parent="BaseBoldTextStyle">
+        <item name="android:textSize">@dimen/text_size_weather_title</item>
+        <item name="android:textColor">@color/blue_gray</item>
+    </style>
+
+    <style name="WeatherSubTitleStyle" parent="BaseSemiBoldTextStyle">
+        <item name="android:textSize">@dimen/text_size_weather_subtitle</item>
+    </style>
+
+    <style name="WeatherBodyStyle" parent="BaseSemiBoldTextStyle">
+        <item name="android:textSize">@dimen/text_size_weather_body</item>
+    </style>
+
+    <style name="WeatherCaptionStyle" parent="BaseSemiBoldTextStyle">
+        <item name="android:textSize">@dimen/text_size_weather_caption</item>
+        <item name="android:textColor">@color/blue_gray</item>
+    </style>
+
+    <style name="WeatherButtonMediumStyle" parent="BaseSemiBoldTextStyle">
+        <item name="android:textSize">@dimen/text_size_weather_button_medium</item>
+    </style>
+
+    <style name="WeatherButtonSmallStyle" parent="BaseSemiBoldTextStyle">
+        <item name="android:textSize">@dimen/text_size_weather_button_small</item>
+    </style>
+
+    <!-- Weather Forecast Screen Styles -->
+    <style name="WeatherForecastItemTitleStyle" parent="BaseBoldTextStyle">
+        <item name="android:textSize">@dimen/text_size_weather_forecast_item_title</item>
+    </style>
+
+    <style name="WeatherForecastItemSubTitleStyle" parent="BaseBoldTextStyle">
+        <item name="android:textSize">@dimen/text_size_weather_forecast_item_subtitle</item>
+    </style>
+
+    <style name="WeatherForecastItemBodyStyle" parent="BaseSemiBoldTextStyle">
+        <item name="android:textSize">@dimen/text_size_weather_forecast_item_body</item>
+    </style>
+
+    <style name="WeatherForecastItemButtonStyle" parent="BaseSemiBoldTextStyle">
+        <item name="android:textSize">@dimen/text_size_weather_forecast_item_button</item>
+    </style>
+
+    <style name="ToolbarTitleStyle">
+        <item name="android:textColor">@color/deep_blue</item>
+        <item name="android:fontFamily">@font/cabin_semibold</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="TextAppearance.ToolbarTitle" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:textSize">@dimen/text_size_toolbar_title</item>
+        <item name="android:textColor">@color/deep_blue</item>
+        <item name="android:fontFamily">@font/cabin_semibold</item>
+    </style>
+
+</resources>
